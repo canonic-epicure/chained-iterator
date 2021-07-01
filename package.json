@@ -1,0 +1,23 @@
+{
+  "name": "chained-iterator",
+  "version": "1.0.0",
+  "description": "Chained iterator for TypeScript",
+  "type": "module",
+  "homepage": "https://github.com/bryntum/siesta",
+  "bugs": "https://github.com/bryntum/siesta/issues",
+  "repository": "git@github.com:bryntum/siesta.git",
+  "keywords": [
+    "chained",
+    "iterator",
+    "typescript"
+  ],
+  "author": "Nickolay Platonov",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "tslint": "^6.1.3",
+    "typescript": "^4.3.5",
+    "@bryntum/siesta": "^6.0.0-alpha-2"
+  }
+}
