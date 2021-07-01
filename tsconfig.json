@@ -7,16 +7,11 @@
         // https://github.com/microsoft/TypeScript/issues/29872#issuecomment-868535962
         "strictPropertyInitialization" : false,
 
-        "jsx"                       : "react",
-        "jsxFactory"                : "TextJSX.createElement",
-        "jsxFragmentFactory"        : "TextJSX.Fragment",
-
         "target"                    : "es2017",
         "sourceMap"                 : false,
 
         "lib"                       : [
             "esnext",
-            "dom"
         ],
 
         "module"                    : "esnext",
@@ -27,25 +22,10 @@
 
     "include" : [
         "index.ts",
-        "nodejs.ts",
-        "browser.ts",
-        "bin/**/*.ts",
-        "build/**/*.ts",
         "src/**/*.ts",
-        "src/**/*.tsx",
         "tests/**/*.ts",
-        "tests/**/*.tsx",
-        "tests_nodejs/**/*.ts",
-        "tests_nodejs/**/*.tsx",
-        "tests_deno/**/*.ts",
-        "tests_deno/**/*.tsx",
-        "examples/**/*.ts",
-        "examples/**/*.tsx"
     ],
 
     "exclude" : [
-        "examples/deno",
-        "examples/nodejs",
-        "examples/browser"
     ]
 }

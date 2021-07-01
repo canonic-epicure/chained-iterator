@@ -1,4 +1,4 @@
-import { it } from "../../index.js"
+import { it } from "@bryntum/siesta/index.js"
 import { CI, map, MemoizedIterator, MI } from "../../src/iterator/Iterator.js"
 
 
