@@ -489,7 +489,7 @@ export type ChainedIterator<T> = ChainedIteratorClass<T>
 export class MemoizedIteratorClass<T> extends ChainedIteratorClass<T> {
     elements        : T[]           = []
 
-    $iterable       : Iterable<T>   = undefined
+    $iterable       : Iterable<T>
     $iterator       : Iterator<T>   = undefined
 
     //@ts-ignore
