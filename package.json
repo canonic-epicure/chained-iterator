@@ -5,6 +5,12 @@
   "main": "index.js",
   "module": "index.js",
   "type": "module",
+  "homepage": "https://github.com/canonic-epicure/chained-iterator",
+  "bugs": "https://github.com/canonic-epicure/chained-iterator/issues",
+  "repository": "git@github.com:canonic-epicure/chained-iterator.git",
+  "scripts": {
+    "test": "node ./tests/index.js"
+  },
   "keywords": [
     "chained",
     "iterator",
