@@ -443,6 +443,16 @@ export class ChainedIteratorClass<T> {
     }
 
 
+    reverse () : T[] {
+        return Array.from(this).reverse()
+    }
+
+
+    reversed () : ChainedIteratorClass<T> {
+        return this.derive(this.reverse())
+    }
+
+
     sort (order : (v1 : T, v2 : T) => number) : T[] {
         return Array.from(this).sort(order)
     }
