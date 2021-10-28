@@ -1,6 +1,6 @@
 {
   "name": "chained-iterator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Chained iterator for TypeScript",
   "main": "index.js",
   "module": "index.js",
