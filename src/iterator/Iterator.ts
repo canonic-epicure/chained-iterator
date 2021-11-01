@@ -324,7 +324,15 @@ export function* concatIterable<Element> (iteratorsProducer : Iterable<Iterable<
 // or, use just `this` as iterable, which will also clear the iterator
 //
 export class ChainedIteratorClass<T> {
-    iterable        : Iterable<T>   = undefined
+    $iterable       : Iterable<T>   = undefined
+
+    get iterable () : Iterable<T> {
+        return this.$iterable
+    }
+
+    set iterable (iterable : Iterable<T>) {
+        this.$iterable  = iterable
+    }
 
 
     constructor (iterable : Iterable<T>) {
@@ -499,15 +507,12 @@ export type ChainedIterator<T> = ChainedIteratorClass<T>
 export class MemoizedIteratorClass<T> extends ChainedIteratorClass<T> {
     elements        : T[]           = []
 
-    $iterable       : Iterable<T>
     $iterator       : Iterator<T>   = undefined
 
-    //@ts-ignore
     get iterable () : Iterable<T> {
         return this
     }
 
-    //@ts-ignore
     set iterable (iterable : Iterable<T>) {
         this.$iterable  = iterable
     }
